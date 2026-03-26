@@ -1,0 +1,16 @@
+# Bluetooth
+bluetooth.profile.sap.server.enabled=false
+
+# DPM
+persist.vendor.dpm.feature=11
+
+# Radio
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
+
+# Miscellaneous
+ro.product.system_ext.otadevice=ota.sdm660_64
+ro.product.system_ext.otamodel=ota.sdm660_64
+ro.product.system_ext.otaname=ota.sdm660_64
+ro.system_ext.build.otafingerprint=Elo/sdm660_64/ota.sdm660_64:14/UKQ1.241008.001/7.000.005.0020+p:user/release-keys
+

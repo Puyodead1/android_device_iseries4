@@ -1,0 +1,7 @@
+# Miscellaneous
+ro.odm.build.otafingerprint=Elo/sdm660_64/ota.sdm660_64:14/UKQ1.241008.001/7.000.005.0020+p:user/release-keys
+ro.product.odm.otadevice=ota.sdm660_64
+ro.product.odm.otamodel=ota.sdm660_64
+ro.product.odm.otaname=ota.sdm660_64
+ro.vendor.qti.va_odm.support=1
+

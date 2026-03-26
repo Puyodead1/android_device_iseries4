@@ -1,0 +1,6 @@
+# Miscellaneous
+ro.product.vendor_dlkm.otadevice=ota.sdm660_64
+ro.product.vendor_dlkm.otamodel=ota.sdm660_64
+ro.product.vendor_dlkm.otaname=ota.sdm660_64
+ro.vendor_dlkm.build.otafingerprint=Elo/sdm660_64/ota.sdm660_64:14/UKQ1.241008.001/7.000.005.0020+p:user/release-keys
+

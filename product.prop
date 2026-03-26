@@ -1,0 +1,26 @@
+# Bluetooth
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.asha.central.enabled=false
+bluetooth.profile.avrcp.controller.enabled=false
+bluetooth.profile.avrcp.target.enabled=false
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=false
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=false
+bluetooth.profile.pan.panu.enabled=false
+bluetooth.profile.pbap.server.enabled=false
+
+# Miscellaneous
+persist.wm.extensions.enabled=true
+ro.com.google.gmsversion=14_202507
+ro.com.google.ime.config_file=product/app/gboard/gboard.rc
+ro.opa.eligible_device=true
+ro.product.build.otafingerprint=Elo/sdm660_64/ota.sdm660_64:14/UKQ1.241008.001/7.000.005.0020+p:user/release-keys
+ro.product.cpu.pagesize.max=4096
+ro.product.product.otadevice=ota.sdm660_64
+ro.product.product.otamodel=ota.sdm660_64
+ro.product.product.otaname=ota.sdm660_64
+
