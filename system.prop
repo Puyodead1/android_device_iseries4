@@ -3,9 +3,22 @@ audio.deep_buffer.media=true
 audio.offload.disable=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.mode=endfire
+persist.vendor.audio.fluence.audiorec=true
+persist.vendor.audio.fluence.voicecomm=true
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.ssr=false
+persist.vendor.audio.hifi.int_codec=true
+persist.vendor.audio.speaker.prot.enable=true
 
 # Bluetooth
 ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
 persist.vendor.camera.preview.ubwc=0
@@ -85,7 +98,12 @@ dalvik.vm.dex2oat-minidebuginfo=true
 dalvik.vm.dex2oat-resolve-startup-strings=true
 dalvik.vm.dexopt.secondary=true
 dalvik.vm.dexopt.thermal-cutoff=2
-dalvik.vm.heapsize=36m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapgrowthlimit=320m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.madvise.artfile.size=4294967295
@@ -160,4 +178,8 @@ vendor.vidc.enc.disable.pq=false
 vendor.vidc.enc.disable_bframes=1
 vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.target_support_bframe=1
+ro.vendor.extension_library=libqti-perfd-client.so
+persist.vendor.dpm.feature=11
+persist.vendor.cne.feature=1
+persist.vendor.delta_time.enable=true
 
