@@ -4,9 +4,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_15in-I-Series-4.mk
+    $(LOCAL_DIR)/lineage_iseries4.mk \
+    $(LOCAL_DIR)/twrp_iseries4.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_15in-I-Series-4-user \
-    lineage_15in-I-Series-4-userdebug \
-    lineage_15in-I-Series-4-eng
+    lineage_iseries4-user \
+    lineage_iseries4-userdebug \
+    lineage_iseries4-eng \
+    twrp_iseries4-eng \
+    twrp_iseries4-userdebug

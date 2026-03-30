@@ -100,4 +100,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/elo/15in-I-Series-4/15in-I-Series-4-vendor.mk)
+$(call inherit-product, vendor/elo/iseries4/iseries4-vendor.mk)

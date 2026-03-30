@@ -10,11 +10,11 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/elo/15in-I-Series-4',
+    'device/elo/iseries4',
 ]
 
 module = ExtractUtilsModule(
-    '15in-I-Series-4',
+    'iseries4',
     'elo',
     namespace_imports=namespace_imports,
 )

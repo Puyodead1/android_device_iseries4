@@ -151,7 +151,6 @@ pm.dexopt.post-boot=extract
 pm.dexopt.shared=speed
 ro.actionable_compatible_property.enabled=true
 ro.af.client_heap_size_kbyte=7168
-ro.allow.mock.location=0
 ro.build.display.baseid=7.000.004.0069+p
 ro.build.otafingerprint=Elo/sdm660_64/ota.sdm660_64:14/UKQ1.241008.001/7.000.005.0020+p:user/release-keys
 ro.dalvik.vm.native.bridge=0

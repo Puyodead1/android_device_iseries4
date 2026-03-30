@@ -3,7 +3,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/elo/15in-I-Series-4
+# TWRP specific
+TW_THEME := landscape_hdpi
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_DEFAULT_BRIGHTNESS := 80
+TW_MAX_BRIGHTNESS := 255
+TW_NO_HAPTICS := true
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_REPACKTOOLS := true
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+
+DEVICE_PATH := device/elo/iseries4
 
 TARGET_USES_UEFI := true
 BOARD_DO_NOT_STRIP_VENDOR_MODULES := true
@@ -20,7 +31,6 @@ TARGET_USES_IMS := true
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += abl bluetooth boot cmnlib cmnlib64 devcfg dsp dtbo hyp keymaster mdtp mdtpsecapp modem pmic product recovery rpm storsec system tz vbmeta vbmeta_system vendor xbl
-BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -102,8 +112,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_USES_UNCOMPRESSED_KERNEL := false
 TARGET_KERNEL_APPEND_DTB := false
-TARGET_KERNEL_CONFIG := 15in-I-Series-4_defconfig
-TARGET_KERNEL_SOURCE := kernel/elo/15in-I-Series-4
+TARGET_KERNEL_CONFIG := iseries4_defconfig
+TARGET_KERNEL_SOURCE := kernel/elo/iseries4
 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
@@ -162,6 +172,8 @@ TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/vendor_dlkm.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+BOARD_PREBUILT_RECOVERY_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
@@ -211,4 +223,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 
 # Inherit the proprietary files
-include vendor/elo/15in-I-Series-4/BoardConfigVendor.mk
+include vendor/elo/iseries4/BoardConfigVendor.mk
